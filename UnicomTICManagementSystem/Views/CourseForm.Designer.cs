@@ -2,15 +2,8 @@
 {
     partial class CourseForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.lblCourse = new System.Windows.Forms.Label();
@@ -41,12 +30,12 @@
             // 
             this.lblCourse.AutoSize = true;
             this.lblCourse.BackColor = System.Drawing.Color.Transparent;
-            this.lblCourse.Font = new System.Drawing.Font("Mytupi", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCourse.Font = new System.Drawing.Font("Mytupi", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.lblCourse.Location = new System.Drawing.Point(36, 63);
             this.lblCourse.Name = "lblCourse";
             this.lblCourse.Size = new System.Drawing.Size(102, 16);
             this.lblCourse.TabIndex = 0;
-            this.lblCourse.Text = "Course Name:\t";
+            this.lblCourse.Text = "Course Name:";
             // 
             // txtCourseName
             // 
@@ -57,36 +46,36 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnAdd.Location = new System.Drawing.Point(231, 343);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(100, 25);
             this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Add Course\t";
+            this.btnAdd.Text = "Add Course";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnUpdate.Location = new System.Drawing.Point(380, 343);
+            this.btnUpdate.Location = new System.Drawing.Point(350, 343);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(120, 25);
             this.btnUpdate.TabIndex = 3;
-            this.btnUpdate.Text = "Update Selected\t";
+            this.btnUpdate.Text = "Update Selected";
             this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.Location = new System.Drawing.Point(537, 343);
+            this.btnDelete.Location = new System.Drawing.Point(490, 343);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(120, 25);
             this.btnDelete.TabIndex = 4;
-            this.btnDelete.Text = "Delete Selected\t";
+            this.btnDelete.Text = "Delete Selected";
             this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // dgvCourses
             // 
@@ -95,8 +84,7 @@
             this.dgvCourses.Name = "dgvCourses";
             this.dgvCourses.Size = new System.Drawing.Size(381, 182);
             this.dgvCourses.TabIndex = 5;
-            this.dgvCourses.CancelRowEdit += new System.Windows.Forms.QuestionEventHandler(this.dgvCourses_CancelRowEdit);
-            this.dgvCourses.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dgvCourses_CellClick);
+            this.dgvCourses.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCourses_CellClick);
             // 
             // CourseForm
             // 
@@ -111,11 +99,11 @@
             this.Controls.Add(this.txtCourseName);
             this.Controls.Add(this.lblCourse);
             this.Name = "CourseForm";
-            this.Text = "CourseForm";
+            this.Text = "Course Management";
+            this.Load += new System.EventHandler(this.CourseForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourses)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

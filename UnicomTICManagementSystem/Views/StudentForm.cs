@@ -39,7 +39,11 @@ namespace UnicomTICManagementSystem.Views
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtStudentName.Text)) return;
+            if (string.IsNullOrWhiteSpace(txtStudentName.Text))
+            {
+                return;
+            }
+
             int courseId = (int)cmbCourse.SelectedValue;
             StudentController.AddStudent(txtStudentName.Text.Trim(), courseId);
             LoadStudents();

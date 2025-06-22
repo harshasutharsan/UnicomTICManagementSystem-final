@@ -34,51 +34,63 @@ namespace UnicomTICManagementSystem.Views
         // Add a new course
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtCourseName.Text))
+            string name = txtCourseName.Text.Trim();
+            if (string.IsNullOrWhiteSpace(name))
             {
                 MessageBox.Show("Course name cannot be empty.");
                 return;
             }
 
-            CourseController.AddCourse(txtCourseName.Text.Trim());
-            LoadCourses(); // Refresh the list
+            if (CourseController.CourseExists(name))
+            {
+                MessageBox.Show("This course already exists.");
+                return;
+            }
+
+            CourseController.AddCourse(name);
+            LoadCourses();
             txtCourseName.Clear();
         }
 
         // Update selected course
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (dgvCourses.SelectedRows.Count > 0)
-            {
-                int id = Convert.ToInt32(dgvCourses.SelectedRows[0].Cells["CourseID"].Value);
-                string newName = txtCourseName.Text.Trim();
-                if (string.IsNullOrEmpty(newName))
-                {
-                    MessageBox.Show("Enter course name.");
-                    return;
-                }
-
-                CourseController.UpdateCourse(id, newName);
-                LoadCourses();
-            }
-            else
+            if (dgvCourses.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Please select a course to update.");
+                return;
             }
+
+            string name = txtCourseName.Text.Trim();
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                MessageBox.Show("Course name cannot be empty.");
+                return;
+            }
+
+            int courseId = Convert.ToInt32(dgvCourses.SelectedRows[0].Cells[0].Value);
+            CourseController.UpdateCourse(courseId, name);
+            LoadCourses();
+            txtCourseName.Clear();
         }
 
         // Delete selected course
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (dgvCourses.SelectedRows.Count > 0)
-            {
-                int id = Convert.ToInt32(dgvCourses.SelectedRows[0].Cells["CourseID"].Value);
-                CourseController.DeleteCourse(id);
-                LoadCourses();
-            }
-            else
+            if (dgvCourses.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Please select a course to delete.");
+                return;
+            }
+
+            int courseId = Convert.ToInt32(dgvCourses.SelectedRows[0].Cells[0].Value);
+
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this course?", "Confirm Delete", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                CourseController.DeleteCourse(courseId);
+                LoadCourses();
+                txtCourseName.Clear();
             }
         }
 
@@ -96,7 +108,17 @@ namespace UnicomTICManagementSystem.Views
 
         }
 
-        private void dgvCourses_CellClick(object sender, KeyPressEventArgs e)
+        //private void dgvCourses_CellClick(object sender, KeyPressEventArgs e)
+        //{
+
+        //}
+
+        private void CourseForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvCourses_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

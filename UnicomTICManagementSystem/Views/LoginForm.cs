@@ -42,5 +42,15 @@ namespace UnicomTICManagementSystem.Views
                 MessageBox.Show("Wrong username or password.");
             }
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

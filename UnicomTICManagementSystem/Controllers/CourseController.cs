@@ -64,5 +64,17 @@ namespace UnicomTICManagementSystem.Controllers
             }
             return list;
         }
-    }
+
+        internal static bool CourseExists(string name)
+        {
+            using (var conn = DatabaseManager.GetConnection())
+            {
+                conn.Open();
+                var cmd = new SQLiteCommand("SELECT COUNT(*) FROM Courses WHERE LOWER(CourseName) = LOWER(@name)", conn);
+                cmd.Parameters.AddWithValue("@name", name);
+                long count = (long)cmd.ExecuteScalar();
+                return count > 0;
+            }
+        }
+    } 
 }
