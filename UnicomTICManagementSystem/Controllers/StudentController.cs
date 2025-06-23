@@ -67,10 +67,5 @@ namespace UnicomTICManagementSystem.Controllers
                 cmd.ExecuteNonQuery();
             }
         }
-
-        public string test()
-        {
-            return "hello";
-        }
     }
 }
