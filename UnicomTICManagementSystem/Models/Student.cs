@@ -11,5 +11,6 @@ namespace UnicomTICManagementSystem.Models
         public int StudentID { get; set; }
         public string Name { get; set; }
         public int CourseID { get; set; }
+        public string StudentName { get; internal set; }
     }
 }
