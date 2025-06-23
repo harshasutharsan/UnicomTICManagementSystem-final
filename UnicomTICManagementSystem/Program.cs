@@ -19,5 +19,6 @@ namespace UnicomTICManagementSystem
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());
         }
+ 
     }
 }
