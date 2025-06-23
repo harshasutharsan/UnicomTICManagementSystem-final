@@ -42,16 +42,16 @@
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
-            this.lblWelcome.Font = new System.Drawing.Font("MontrealSerial", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.Location = new System.Drawing.Point(56, 24);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(180, 50);
+            this.lblWelcome.Size = new System.Drawing.Size(181, 39);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Welcome!";
             // 
             // btnCourses
             // 
-            this.btnCourses.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnCourses.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnCourses.Location = new System.Drawing.Point(162, 161);
             this.btnCourses.Name = "btnCourses";
             this.btnCourses.Size = new System.Drawing.Size(75, 23);
@@ -62,18 +62,18 @@
             // 
             // btnSubjects
             // 
-            this.btnSubjects.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnSubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnSubjects.Location = new System.Drawing.Point(162, 217);
             this.btnSubjects.Name = "btnSubjects";
             this.btnSubjects.Size = new System.Drawing.Size(75, 23);
             this.btnSubjects.TabIndex = 2;
             this.btnSubjects.Text = "Subjects";
             this.btnSubjects.UseVisualStyleBackColor = true;
-            this.btnSubjects.Click += new System.EventHandler(this.btnCourses_Click);
+            this.btnSubjects.Click += new System.EventHandler(this.btnSubjects_Click);
             // 
             // btnStudents
             // 
-            this.btnStudents.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnStudents.Location = new System.Drawing.Point(162, 273);
             this.btnStudents.Name = "btnStudents";
             this.btnStudents.Size = new System.Drawing.Size(75, 23);
@@ -84,7 +84,7 @@
             // 
             // btnExams
             // 
-            this.btnExams.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnExams.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnExams.Location = new System.Drawing.Point(520, 159);
             this.btnExams.Name = "btnExams";
             this.btnExams.Size = new System.Drawing.Size(75, 23);
@@ -95,7 +95,7 @@
             // 
             // btnMarks
             // 
-            this.btnMarks.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnMarks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnMarks.Location = new System.Drawing.Point(519, 217);
             this.btnMarks.Name = "btnMarks";
             this.btnMarks.Size = new System.Drawing.Size(75, 23);
@@ -106,7 +106,7 @@
             // 
             // btnTimetables
             // 
-            this.btnTimetables.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnTimetables.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnTimetables.Location = new System.Drawing.Point(520, 271);
             this.btnTimetables.Name = "btnTimetables";
             this.btnTimetables.Size = new System.Drawing.Size(75, 23);
@@ -117,7 +117,7 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnLogout.Location = new System.Drawing.Point(340, 360);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 23);
