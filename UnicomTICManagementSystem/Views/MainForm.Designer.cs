@@ -69,7 +69,7 @@
             this.btnSubjects.TabIndex = 2;
             this.btnSubjects.Text = "Subjects";
             this.btnSubjects.UseVisualStyleBackColor = true;
-            this.btnSubjects.Click += new System.EventHandler(this.btnCourses_Click);
+            this.btnSubjects.Click += new System.EventHandler(this.btnSubjects_Click);
             // 
             // btnStudents
             // 
@@ -87,7 +87,7 @@
             this.btnExams.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnExams.Location = new System.Drawing.Point(520, 159);
             this.btnExams.Name = "btnExams";
-            this.btnExams.Size = new System.Drawing.Size(75, 23);
+            this.btnExams.Size = new System.Drawing.Size(87, 23);
             this.btnExams.TabIndex = 4;
             this.btnExams.Text = "Exams";
             this.btnExams.UseVisualStyleBackColor = true;
