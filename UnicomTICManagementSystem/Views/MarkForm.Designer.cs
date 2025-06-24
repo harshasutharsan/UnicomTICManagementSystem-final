@@ -45,6 +45,7 @@
             this.cmbStudent.Name = "cmbStudent";
             this.cmbStudent.Size = new System.Drawing.Size(121, 21);
             this.cmbStudent.TabIndex = 0;
+            this.cmbStudent.SelectedIndexChanged += new System.EventHandler(this.cmbStudent_SelectedIndexChanged);
             // 
             // cmbExam
             // 

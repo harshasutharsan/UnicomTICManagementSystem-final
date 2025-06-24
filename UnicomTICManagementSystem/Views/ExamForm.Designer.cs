@@ -43,6 +43,7 @@
             this.txtExamName.Name = "txtExamName";
             this.txtExamName.Size = new System.Drawing.Size(121, 20);
             this.txtExamName.TabIndex = 0;
+            this.txtExamName.TextChanged += new System.EventHandler(this.txtExamName_TextChanged);
             // 
             // cmbSubject
             // 
@@ -59,6 +60,7 @@
             this.dgvExams.Name = "dgvExams";
             this.dgvExams.Size = new System.Drawing.Size(347, 168);
             this.dgvExams.TabIndex = 2;
+            this.dgvExams.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvExams_CellContentClick);
             // 
             // btnAdd
             // 

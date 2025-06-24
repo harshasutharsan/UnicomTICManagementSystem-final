@@ -82,5 +82,15 @@ namespace UnicomTICManagementSystem.Views
         {
 
         }
+
+        private void txtExamName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvExams_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

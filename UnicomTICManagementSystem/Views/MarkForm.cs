@@ -101,5 +101,10 @@ namespace UnicomTICManagementSystem.Views
         {
 
         }
+
+        private void cmbStudent_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

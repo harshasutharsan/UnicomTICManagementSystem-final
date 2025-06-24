@@ -51,6 +51,7 @@
             this.cmbCourse.Name = "cmbCourse";
             this.cmbCourse.Size = new System.Drawing.Size(219, 21);
             this.cmbCourse.TabIndex = 1;
+            this.cmbCourse.SelectedIndexChanged += new System.EventHandler(this.cmbCourse_SelectedIndexChanged);
             // 
             // dgvSubjects
             // 

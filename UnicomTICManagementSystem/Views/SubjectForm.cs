@@ -87,5 +87,10 @@ namespace UnicomTICManagementSystem.Views
         {
 
         }
+
+        private void cmbCourse_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
