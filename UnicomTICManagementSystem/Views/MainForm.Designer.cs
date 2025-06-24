@@ -51,8 +51,10 @@
             // 
             // btnCourses
             // 
+            this.btnCourses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCourses.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCourses.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnCourses.Location = new System.Drawing.Point(162, 161);
+            this.btnCourses.Location = new System.Drawing.Point(265, 193);
             this.btnCourses.Name = "btnCourses";
             this.btnCourses.Size = new System.Drawing.Size(75, 23);
             this.btnCourses.TabIndex = 1;
@@ -62,8 +64,10 @@
             // 
             // btnSubjects
             // 
+            this.btnSubjects.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSubjects.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSubjects.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnSubjects.Location = new System.Drawing.Point(162, 217);
+            this.btnSubjects.Location = new System.Drawing.Point(265, 249);
             this.btnSubjects.Name = "btnSubjects";
             this.btnSubjects.Size = new System.Drawing.Size(75, 23);
             this.btnSubjects.TabIndex = 2;
@@ -73,8 +77,10 @@
             // 
             // btnStudents
             // 
+            this.btnStudents.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStudents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStudents.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnStudents.Location = new System.Drawing.Point(162, 273);
+            this.btnStudents.Location = new System.Drawing.Point(265, 305);
             this.btnStudents.Name = "btnStudents";
             this.btnStudents.Size = new System.Drawing.Size(75, 23);
             this.btnStudents.TabIndex = 3;
@@ -84,10 +90,12 @@
             // 
             // btnExams
             // 
+            this.btnExams.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExams.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExams.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnExams.Location = new System.Drawing.Point(520, 159);
+            this.btnExams.Location = new System.Drawing.Point(418, 192);
             this.btnExams.Name = "btnExams";
-            this.btnExams.Size = new System.Drawing.Size(87, 23);
+            this.btnExams.Size = new System.Drawing.Size(74, 23);
             this.btnExams.TabIndex = 4;
             this.btnExams.Text = "Exams";
             this.btnExams.UseVisualStyleBackColor = true;
@@ -95,8 +103,10 @@
             // 
             // btnMarks
             // 
+            this.btnMarks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarks.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMarks.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnMarks.Location = new System.Drawing.Point(519, 217);
+            this.btnMarks.Location = new System.Drawing.Point(417, 247);
             this.btnMarks.Name = "btnMarks";
             this.btnMarks.Size = new System.Drawing.Size(75, 23);
             this.btnMarks.TabIndex = 5;
@@ -106,8 +116,10 @@
             // 
             // btnTimetables
             // 
+            this.btnTimetables.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimetables.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTimetables.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnTimetables.Location = new System.Drawing.Point(520, 271);
+            this.btnTimetables.Location = new System.Drawing.Point(418, 305);
             this.btnTimetables.Name = "btnTimetables";
             this.btnTimetables.Size = new System.Drawing.Size(75, 23);
             this.btnTimetables.TabIndex = 6;
@@ -117,6 +129,8 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogout.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnLogout.Location = new System.Drawing.Point(340, 360);
             this.btnLogout.Name = "btnLogout";

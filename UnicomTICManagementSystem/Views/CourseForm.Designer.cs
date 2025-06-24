@@ -30,7 +30,7 @@
             // 
             this.lblCourse.AutoSize = true;
             this.lblCourse.BackColor = System.Drawing.Color.Transparent;
-            this.lblCourse.Font = new System.Drawing.Font("Mytupi", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.lblCourse.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCourse.Location = new System.Drawing.Point(36, 63);
             this.lblCourse.Name = "lblCourse";
             this.lblCourse.Size = new System.Drawing.Size(102, 16);
@@ -46,6 +46,8 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdd.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnAdd.Location = new System.Drawing.Point(231, 343);
             this.btnAdd.Name = "btnAdd";
@@ -57,6 +59,8 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdate.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.Location = new System.Drawing.Point(350, 343);
             this.btnUpdate.Name = "btnUpdate";
@@ -68,6 +72,8 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelete.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnDelete.Location = new System.Drawing.Point(490, 343);
             this.btnDelete.Name = "btnDelete";
@@ -104,6 +110,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourses)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
