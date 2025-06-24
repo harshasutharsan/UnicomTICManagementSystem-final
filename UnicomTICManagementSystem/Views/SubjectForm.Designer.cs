@@ -108,11 +108,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Enabled = false;
             this.label1.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(190, 37);
+            this.label1.Location = new System.Drawing.Point(148, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 16);
+            this.label1.Size = new System.Drawing.Size(96, 16);
             this.label1.TabIndex = 6;
-            this.label1.Text = "label1";
+            this.label1.Text = "SubjectName";
             // 
             // label2
             // 
@@ -120,11 +120,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Mytupi", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(190, 90);
+            this.label2.Location = new System.Drawing.Point(148, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 16);
+            this.label2.Size = new System.Drawing.Size(54, 16);
             this.label2.TabIndex = 7;
-            this.label2.Text = "label2";
+            this.label2.Text = "Course";
             // 
             // SubjectForm
             // 
